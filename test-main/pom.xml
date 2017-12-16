@@ -46,6 +46,24 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
 
+
+        <!-- Spring framework test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version>${spring.test.version}</version>
+        </dependency>
+
+        <!-- DBunit -->
+        <dependency>
+            <groupId>com.github.springtestdbunit</groupId>
+            <artifactId>spring-test-dbunit</artifactId>
+            <scope>test</scope>
+            <version>${dbunit.version}</version>
+
+        </dependency>
+
     </dependencies>
 
     <build>
