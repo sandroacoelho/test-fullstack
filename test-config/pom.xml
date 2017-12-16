@@ -11,6 +11,15 @@
 
     <artifactId>test-config</artifactId>
     <name>Test Full Stack Config</name>
+    <packaging>jar</packaging>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
