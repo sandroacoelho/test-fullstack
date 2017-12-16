@@ -59,9 +59,15 @@
         <dependency>
             <groupId>com.github.springtestdbunit</groupId>
             <artifactId>spring-test-dbunit</artifactId>
+            <version>LATEST</version>
             <scope>test</scope>
-            <version>${dbunit.version}</version>
+        </dependency>
 
+        <!-- GSON -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

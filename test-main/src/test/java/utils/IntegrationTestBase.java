@@ -2,6 +2,7 @@ package utils;
 
 
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
+import com.github.springtestdbunit.annotation.DbUnitConfiguration;
 import com.test.main.TestMain;
 import org.junit.Before;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,11 @@ import org.springframework.web.context.WebApplicationContext;
 @ContextConfiguration
 @WebAppConfiguration
 @TestPropertySource(locations = "classpath:application-test.properties")
-@TestExecutionListeners({DependencyInjectionTestExecutionListener.class, DirtiesContextTestExecutionListener.class, TransactionalTestExecutionListener.class, DbUnitTestExecutionListener.class})
+@TestExecutionListeners({DependencyInjectionTestExecutionListener.class,
+                         DirtiesContextTestExecutionListener.class,
+                         TransactionalTestExecutionListener.class,
+                         DbUnitTestExecutionListener.class})
+@DbUnitConfiguration(databaseOperationLookup = MySQLDatabaseOperationLookup.class)
 public class IntegrationTestBase {
 
   @Autowired

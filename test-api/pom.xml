@@ -10,12 +10,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <properties>
-        <spring.test.version>1.5.2.RELEASE</spring.test.version>
-        <dbunit.version>1.2.1</dbunit.version>
-    </properties>
-
-
 
     <build>
         <plugins>
