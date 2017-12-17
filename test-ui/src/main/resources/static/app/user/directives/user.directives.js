@@ -1,1 +1,1 @@
-!function(u){"use strict"}(angular.module("user"));
+!function(a){"use strict";a.directive("validateEmail",function(){var a=/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;return{require:"ngModel",restrict:"",link:function(i,t,e,r){r&&r.$validators.email&&(r.$validators.email=function(i){return r.$isEmpty(i)||a.test(i)})}}})}(angular.module("user"));

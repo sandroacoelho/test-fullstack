@@ -28,8 +28,8 @@
 
                     <div class="form-group">
                         <label name="email" class="email required control-label">Email</label>
-                        <input type="text" name="email" ng-model="user.email" class="string email required form-control" placeholder="correio eletrônico/email" maxlength="300" required/>
-                        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">O e-mail é obrigatório.</p>
+                        <input type='email' validate-email name="email" ng-model="user.email" class="string email required form-control" placeholder="correio eletrônico/email" maxlength="300" required/>
+                        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">O e-mail é obrigatório. Informe um válido!</p>
                     </div>
 
                     <div class="form-group">
