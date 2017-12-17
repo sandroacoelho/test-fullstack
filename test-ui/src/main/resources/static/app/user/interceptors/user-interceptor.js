@@ -1,5 +1,1 @@
-(function (module) {
-
-    'use strict';
-
-})(angular.module('user'));
+!function(u){"use strict"}(angular.module("user"));
