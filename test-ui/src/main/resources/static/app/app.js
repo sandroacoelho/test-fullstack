@@ -15,7 +15,11 @@
 				url: '/user/add',
 				templateUrl : 'app/user/views/user.html',
 				controller : 'UserController'
-			});
+			}).state('user/edit', {
+                url: '/user/:userId',
+				templateUrl : 'app/user/views/user.html',
+                controller : 'UserController'
+            });
 }]);
 
     module.run(['$rootScope', '$state',

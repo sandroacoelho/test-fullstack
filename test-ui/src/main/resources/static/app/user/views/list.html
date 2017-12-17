@@ -32,9 +32,9 @@
                         <td>{{user.phone}}</td>
                         <td>{{user.sex}}</td>
                         <td>
-                            <a href="#user/{{user.id}}">
+                            <a ui-sref="user/edit({userId:user.id})">
                                 <button type="button" class="btn btn-default btn-xs btn-primary">
-                                    Alterar
+                                   Alterar
                                 </button>
                             </a>
 

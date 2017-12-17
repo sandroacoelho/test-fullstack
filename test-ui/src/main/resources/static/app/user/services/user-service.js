@@ -45,17 +45,14 @@
             return (request.then(handleSuccess, handleError));
         };
 
-        var listUser = function (user) {
+        var listUser = function (id) {
 
             var request = $http({
                 method: "GET",
-                url: ENDPOINT + API_USER + "/" + user.id,
+                url: ENDPOINT + API_USER + "/" + id,
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-                },
-                params: {
-                    id: user.id
                 }
             });
 
@@ -63,7 +60,7 @@
 
         };
 
-        var listUsers = function (user) {
+        var loadUsers = function (user) {
 
             var request = $http({
                 method: "GET",
@@ -93,7 +90,7 @@
         };
 
         return {
-            listUsers: listUsers,
+            loadUsers: loadUsers,
             listUser: listUser,
             saveUser: saveUser,
             removeUser: removeUser
