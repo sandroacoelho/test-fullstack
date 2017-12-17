@@ -34,7 +34,7 @@
 
                     <div class="form-group">
                         <label name="phone" class="email required control-label">Telefone</label>
-                        <input type="text" name="phone" ng-model="user.phone" class="string required form-control" placeholder="Telefone" maxlength="255" required/>
+                        <input type="text" name="phone" numbers-only ng-model="user.phone" class="string required form-control" placeholder="Telefone" maxlength="25" required/>
                         <p ng-show="userForm.phone.$invalid && !userForm.phone.$pristine" class="help-block">O telefone é obrigatório.</p>
                     </div>
 
